@@ -1,0 +1,81 @@
+.app__container {
+  background-color: #011c27;
+  background-image: linear-gradient(
+    126deg,
+    #011c27 0%,
+    #6f2f44 46%,
+    #8686c0 100%
+  );
+
+  background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  width: 100vw;
+}
+
+@keyframes gradient {
+  0% {
+    background-size: 400% 400%;
+    background-position: 0%;
+  }
+  30% {
+    background-position: 60%;
+  }
+  70% {
+    background-size: 200% 200%;
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+.app__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .logo {
+    height: 56vh;
+    width: auto;
+
+    @media screen and (max-width: 900px) {
+      height: 50vh;
+    }
+  }
+}
+
+.app__comingSoon {
+  text-align: center;
+  h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75rem;
+    font-weight: 300;
+
+    color: white;
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+      var(--secondary-color) 0px 0px 20px, var(--secondary-color) 0px 0px 30px,
+      var(--secondary-color) 0px 0px 40px, var(--secondary-color) 0px 0px 50px,
+      var(--secondary-color) 0px 0px 75px;
+    @media screen and (max-width: 900px) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.media__icons {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+
+  &-icon {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+}
