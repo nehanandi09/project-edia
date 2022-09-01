@@ -3,7 +3,7 @@ import "./ComingSoon.scss";
 
 import { ReactComponent as WhiteLogo } from "../../assets/whiteEdia.svg";
 import { BsInstagram } from "react-icons/bs";
-import { FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaTiktok } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 
@@ -12,7 +12,7 @@ const ComingSoon = () => {
     <div className="app__container">
       <motion.div
         whileInView={{ y: [-100, 0], opacity: [0, 1] }}
-        transition={{ delay: 4 }}
+        transition={{ duration: 0.5 }}
         className="app__logo"
       >
         <div>
@@ -21,7 +21,7 @@ const ComingSoon = () => {
         <motion.div
           whileInView={{ y: [100, 0], opacity: [0, 1] }}
           transition={{
-            delay: 5,
+            delay: 1,
           }}
           className="app__comingSoon"
         >
@@ -30,7 +30,7 @@ const ComingSoon = () => {
         <motion.div
           whileInView={{ y: [100, 0], opacity: [0, 1] }}
           transition={{
-            delay: 6,
+            delay: 1.25,
           }}
           className="media__icons"
         >
@@ -63,7 +63,7 @@ const ComingSoon = () => {
             </motion.div>
           </a>
           <a
-            href="https://www.youtube.com/channel/UCrJIykHlikPI27fYTUvOIRw"
+            href="https://www.tiktok.com/@ediastudios?_t=8VKLxH43MYf&_r=1"
             target="_blank"
             rel="noreferrer"
           >
@@ -73,7 +73,7 @@ const ComingSoon = () => {
                 duration: 0.25,
               }}
             >
-              <FaYoutube className="media__icons-icon" />
+              <FaTiktok className="media__icons-icon" />
             </motion.div>
           </a>
         </motion.div>
